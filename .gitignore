@@ -6,7 +6,7 @@ test/temp
 test/bower_components/
 test
 app/static/dev
-
+app/build/
 *.pyc
 *.pyo
 *.swp

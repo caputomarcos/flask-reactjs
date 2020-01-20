@@ -1,4 +1,4 @@
-from flask_cache import Cache
+from flask_caching import Cache
 from flask_debugtoolbar import DebugToolbarExtension
 from flask_login import LoginManager
 from flask_wtf.csrf import CsrfProtect
@@ -8,7 +8,7 @@ from flask_babel import Babel
 
 from app.models.user import User
 
-cache = Cache()
+cache = Cache(config={'CACHE_TYPE': 'simple'})
 
 debug_toolbar = DebugToolbarExtension()
 
